@@ -1,0 +1,20 @@
+.footer-address:nth-last-child(n + 2) {
+  margin-bottom: 9px;
+}
+
+.footer-link {
+  @include font(14px, 400, 1.71);
+  text-decoration: none;
+  font-style: normal;
+  color: var(--color-white);
+}
+
+.contact-footer {
+  color: var(--footer_contacts_color);
+  transition: color var(--animations);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-and-logo-color);
+  }
+}

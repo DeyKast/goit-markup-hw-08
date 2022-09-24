@@ -1,0 +1,38 @@
+.card-links-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.card-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-white);
+  fill: var(--icons-color);
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: fill var(--animations), background-color var(--animations);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-and-logo-color);
+    fill: var(--color-white);
+  }
+}
+
+.card-link-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.footer-icon {
+  background-color: var(--footer-icons-background);
+  fill: var(--color-white);
+}

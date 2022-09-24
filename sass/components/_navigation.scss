@@ -1,0 +1,115 @@
+.header-navigation {
+  display: flex;
+  align-items: baseline;
+}
+
+.header-menu {
+  display: flex;
+  column-gap: 50px;
+}
+
+.menu__link {
+  @include font(14px, 500, 1.14);
+  color: var(--main-color);
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  display: flex;
+  align-items: baseline;
+
+  transition: color var(--animations);
+
+  fill: var(--text-color);
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: background-color var(--animations);
+
+    border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--hover-and-logo-color);
+
+    fill: var(--hover-and-logo-color);
+
+    &::after {
+      background-color: var(--hover-and-logo-color);
+    }
+  }
+  &.menu__link-current {
+    color: var(--hover-and-logo-color);
+
+    &::after {
+      transform: translate(-50%, 0);
+      background-color: var(--hover-and-logo-color);
+    }
+  }
+}
+
+.menu__item {
+  position: relative;
+}
+
+.header-contacts-list {
+  margin-left: auto;
+  display: flex;
+  align-items: baseline;
+}
+
+.header-contacts-list__link {
+  @include font(14px, 500, 1.14);
+  color: var(--text-color);
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+
+  transition: color var(--animations);
+
+  fill: var(--text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-and-logo-color);
+
+    fill: var(--hover-and-logo-color);
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.header-contacts-list__item {
+  margin-right: 50px;
+  display: flex;
+  align-items: baseline;
+}
+
+.header-contacts-list__mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  transition: fill var(--animations);
+}
+
+.header-contacts-list__smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  transition: fill var(--animations);
+}

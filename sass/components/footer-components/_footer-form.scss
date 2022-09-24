@@ -1,0 +1,31 @@
+.footer-form-title {
+  @include font(14px, 700, 1.14);
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+  color: var(--color-white);
+}
+
+.footer-input-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-form-label {
+  margin-right: 12px;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  background: none;
+  border: 1px solid var(--footer-input-color);
+  border-radius: 4px;
+  color: var(--color-white);
+
+  &::placeholder {
+    color: var(--footer-input-color);
+  }
+}

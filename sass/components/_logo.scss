@@ -1,0 +1,19 @@
+.logo {
+  @include font(26px, 700, 1.38);
+  font-family: var(--logo-family);
+  text-decoration: none;
+  color: var(--hover-and-logo-color);
+  margin-right: 93px;
+}
+
+.logo-dark {
+  color: var(--color-black);
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.logo-light {
+  color: var(--color-white);
+}
