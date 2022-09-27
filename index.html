@@ -38,6 +38,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="burger-button js-open-menu">
+          <svg class="burger-button__icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="header-contacts-list">
           <li class="header-contacts-list__item">
             <a
@@ -66,6 +71,56 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button
+            type="button"
+            class="modal-close-button mobile-menu__close-button js-close-menu"
+          >
+            <svg
+              aria-label="Закрити"
+              class="modal-close-button-icon mobile-menu__close-button-icon"
+            >
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__navigation">
+            <li class="mobile-menu__navigation-item">
+              <a href="./index.html"> Студія</a>
+            </li>
+            <li class="mobile-menu__navigation-item">
+              <a href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__navigation-item">
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__contacts-list">
+            <li class="mobile-menu__contacts-list-item-phone">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contacts-list-item-email">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-list-item">
+              <a href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -82,7 +137,7 @@
       </section>
       <!-- section_3 -->
       <section class="section">
-        <div class="container">
+        <div class="container section3-container">
           <h2 class="visually-hidden">Наші особливості</h2>
           <ul class="section3-list">
             <li class="section3-list__item">
@@ -91,58 +146,68 @@
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="section3__title">Увага до деталей</h3>
-              <p class="section3__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
+              <div class="section3__text-wrapper">
+                <h3 class="section3__title">Увага до деталей</h3>
+                <p class="section3__text">
+                  Ідейні міркування, і навіть початок повсякденної роботи з
+                  формування позиції.
+                </p>
+              </div>
             </li>
-            <li class="section3-card">
+            <li class="section3-list__item">
               <div class="section3-list__icon-border">
                 <svg aria-label="Значок годинника" class="section3-list__icon">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="section3__title">Пунктуальність</h3>
-              <p class="section3__text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
+              <div class="section3__text-wrapper">
+                <h3 class="section3__title">Пунктуальність</h3>
+                <p class="section3__text">
+                  Завдання організації, особливо рамки і місце навчання кадрів
+                  тягне у себе.
+                </p>
+              </div>
             </li>
-            <li class="section3-card">
+            <li class="section3-list__item">
               <div class="section3-list__icon-border">
                 <svg aria-label="Значок годинника" class="section3-list__icon">
                   <use href="./images/sprite.svg#icon-notebook"></use>
                 </svg>
               </div>
-              <h3 class="section3__title">Планування</h3>
-              <p class="section3__text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
+              <div class="section3__text-wrapper">
+                <h3 class="section3__title">Планування</h3>
+                <p class="section3__text">
+                  Так само консультація з широким активом значною мірою
+                  зумовлює.
+                </p>
+              </div>
             </li>
-            <li class="section3-card">
+            <li class="section3-list__item">
               <div class="section3-list__icon-border">
                 <svg aria-label="Значок годинника" class="section3-list__icon">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section3__title">Сучасні технології</h3>
-              <p class="section3__text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
+              <div class="section3__text-wrapper">
+                <h3 class="section3__title">Сучасні технології</h3>
+                <p class="section3__text">
+                  Значимість цих проблем настільки очевидна, що реалізація
+                  планових завдань.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <!-- section_4 -->
-      <section class="section4">
+      <!-- <section class="section4">
         <div class="container">
           <h2 class="page-title">Чим ми займаємося</h2>
           <ul class="section4-list">
             <li class="section4-list__item">
               <div class="section4-list__wrapper">
                 <img
+                  srcset="./images/algoritming@2x.jpg"
                   src="./images/algoritming.jpg"
                   alt="Алгоритмізація"
                   width="370"
@@ -153,6 +218,7 @@
             <li class="section4-list__item">
               <div class="section4-list__wrapper">
                 <img
+                  srcset="./images/mobile_develop@2x.jpg"
                   src="./images/mobile_develop.jpg"
                   alt="Мобільна розробка"
                   width="370"
@@ -162,20 +228,54 @@
             </li>
             <li class="section4-list__item">
               <div class="section4-list__wrapper">
-                <img src="./images/designing.jpg" alt="Дизайн" width="370" />
+                <img
+                  srcset="./images/designing@2x.jpg"
+                  src="./images/designing.jpg"
+                  alt="Дизайн"
+                  width="370"
+                />
                 <p class="section4-list__item-text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- section_5 -->
-      <section class="section5_background section">
+      <!-- <section class="section5_background section">
         <div class="container">
           <h2 class="page-title">Наша команда</h2>
           <ul class="section5-flex">
             <li class="section5_card">
-              <img src="./images/igor.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-images/igor.jpg    1x,
+                    ./images/desktop-images/igor@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet-images/igor-tablet.jpg    1x,
+                    ./images/tablet-images/igor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile-images/igor-mobile.jpg    1x,
+                    ./images/mobile-images/igor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/mobile-images/igor-mobile.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <div class="team-card-text">
                 <h3 class="section5-text">Ігор Дем'яненко</h3>
                 <p lang="en" class="section5-text section5-subtext">
@@ -230,7 +330,36 @@
               </div>
             </li>
             <li class="section5_card">
-              <img src="./images/olga.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-images/olga.jpg    1x,
+                    ./images/desktop-images/olga@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet-images/olga-tablet.jpg    1x,
+                    ./images/tablet-images/olga-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile-images/olga-mobile.jpg    1x,
+                    ./images/mobile-images/olga-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/mobile-images/olga-mobile.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <div class="team-card-text">
                 <h3 class="section5-text">Ольга Рєпіна</h3>
                 <p lang="en" class="section5-text section5-subtext">
@@ -285,7 +414,36 @@
               </div>
             </li>
             <li class="section5_card">
-              <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-images/mykola.jpg    1x,
+                    ./images/desktop-images/mykola@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet-images/mykola-tablet.jpg    1x,
+                    ./images/tablet-images/mykola-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile-images/mykola-mobile.jpg    1x,
+                    ./images/mobile-images/mykola-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/mobile-images/mykola-mobile.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="team-card-text">
                 <h3 class="section5-text">Микола Тарасов</h3>
                 <p lang="en" class="section5-text section5-subtext">
@@ -340,11 +498,36 @@
               </div>
             </li>
             <li class="section5_card">
-              <img
-                src="./images/myhailo.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-images/myhailo.jpg    1x,
+                    ./images/desktop-images/myhailo@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet-images/myhailo-tablet.jpg    1x,
+                    ./images/tablet-images/myhailo-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile-images/myhailo-mobile.jpg    1x,
+                    ./images/mobile-images/myhailo-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/mobile-images/myhailo-mobile.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="team-card-text">
                 <h3 class="section5-text">Михайло Єрмаков</h3>
                 <p lang="en" class="section5-text section5-subtext">
@@ -400,9 +583,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- SECTION_6 -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container companies-section">
           <h2 class="page-title">Постійні клієнти</h2>
           <ul class="companies-list">
@@ -474,10 +657,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- FOOTER -->
-    <footer class="footer-background">
+    <!-- <footer class="footer-background">
       <div class="container section-footer">
         <div class="footer-contacts-flex">
           <a href="./index.html" lang="en" class="logo footer-logo"
@@ -583,10 +766,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- MODAL -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg aria-label="Закрити" class="modal-close-button-icon">
@@ -671,8 +854,9 @@
           </form>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

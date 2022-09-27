@@ -1,8 +1,50 @@
-.header-border {
-  border-bottom: 1px solid var(--header-border);
+.burger-button {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .burger-button__icon {
+      fill: var(--hover-and-logo-color);
+    }
+  }
+}
+
+.burger-button__icon {
+  transition: fill var(--animations);
+
+  width: 40px;
+  height: 40px;
+  fill: var(--color-black);
 }
 
 .header-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-border {
+  border-bottom: 1px solid var(--header-border);
+}
+
+@media screen and (min-width: 768px) {
+  .burger-button {
+    display: none;
+  }
+
+  .burger-button__icon {
+    display: none;
+  }
+
+  .header-container {
+    padding-bottom: 0px;
+  }
 }

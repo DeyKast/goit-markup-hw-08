@@ -1,16 +1,84 @@
 .poster {
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 125px;
+  padding-bottom: 125px;
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/header-background.jpg"), linear-gradient(#2f303a, #2f303a);
+    url("../images/mobile-images/poster-background-mobile.jpg"),
+    linear-gradient(#2f303a, #2f303a);
   background-repeat: no-repeat;
-  background-size: 1600px;
+  background-size: 480px;
   background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .poster {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile-images/poster-background-mobile@2x.jpg"),
+      linear-gradient(#2f303a, #2f303a);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .poster {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet-images/poster-background-tablet.jpg"),
+      linear-gradient(#2f303a, #2f303a);
+
+    background-size: 768px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .poster {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet-images/poster-background-tablet@2x.jpg"),
+      linear-gradient(#2f303a, #2f303a);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .poster {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop-images/poster-background.jpg"),
+      linear-gradient(#2f303a, #2f303a);
+
+    background-size: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .poster {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop-images/poster-background@2x.jpg"),
+      linear-gradient(#2f303a, #2f303a);
+  }
 }
 
 .poster-container {
@@ -20,12 +88,19 @@
 }
 
 .poster-container__title {
-  @include font(44px, 900, 1.36);
+  @include font(26px, 900, 1.36);
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
   margin-bottom: 30px;
-  width: 700px;
+  width: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+  .poster-container__title {
+    @include font(44px, 900, 1.36);
+    width: 700px;
+  }
 }

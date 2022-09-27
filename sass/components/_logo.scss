@@ -1,9 +1,9 @@
 .logo {
-  @include font(26px, 700, 1.38);
+  @include font(24px, 700, 1.38);
   font-family: var(--logo-family);
   text-decoration: none;
   color: var(--hover-and-logo-color);
-  margin-right: 93px;
+  margin-right: 88px;
 }
 
 .logo-dark {
@@ -16,4 +16,11 @@
 
 .logo-light {
   color: var(--color-white);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    @include font(26px, 700, 1.38);
+    margin-right: 92px;
+  }
 }
