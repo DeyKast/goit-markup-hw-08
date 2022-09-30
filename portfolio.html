@@ -37,6 +37,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="burger-button js-open-menu">
+          <svg class="burger-button__icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="header-contacts-list">
           <li class="header-contacts-list__item">
             <a
@@ -65,6 +70,56 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button
+            type="button"
+            class="modal-close-button mobile-menu__close-button js-close-menu"
+          >
+            <svg
+              aria-label="Закрити"
+              class="modal-close-button-icon mobile-menu__close-button-icon"
+            >
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__navigation">
+            <li class="mobile-menu__navigation-item">
+              <a href="./index.html"> Студія</a>
+            </li>
+            <li class="mobile-menu__navigation-item">
+              <a href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__navigation-item">
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__contacts-list">
+            <li class="mobile-menu__contacts-list-item-phone">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contacts-list-item-email">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-list-item">
+              <a href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -92,11 +147,37 @@
             <li class="portfolio-card">
               <a href="#" class="portfolio-link">
                 <div class="overlay-flex">
-                  <img
-                    src="./images/notebook_with_site.jpg"
-                    alt="Ноутбук із відкритим сайтом"
-                    class="portfolio-card-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-images/notebook-with-site.jpg    1x,
+                        ./images/desktop-images/notebook-with-site@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet-images/notebook-with-site-tablet.jpg    1x,
+                        ./images/tablet-images/notebook-with-site-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile-images/notebook-with-site-mobile.jpg    1x,
+                        ./images/mobile-images/notebook-with-site-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/mobile-images/notebook-with-site-mobile.jpg"
+                      alt="Ноутбук з відкритим сайтом"
+                      class="portfolio-card-img"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -112,11 +193,37 @@
             <li class="portfolio-card">
               <a href="#" class="portfolio-link">
                 <div class="overlay-flex">
-                  <img
-                    src="./images/basketball.jpg"
-                    alt="Гра у баскетбол"
-                    class="portfolio-card-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-images/basketball.jpg    1x,
+                        ./images/desktop-images/basketball@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet-images/basketball-tablet.jpg    1x,
+                        ./images/tablet-images/basketball-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile-images/basketball-mobile.jpg    1x,
+                        ./images/mobile-images/basketball-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/mobile-images/basketball-mobile.jpg"
+                      alt="Гра у баскетбол"
+                      class="portfolio-card-img"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -134,11 +241,37 @@
             <li class="portfolio-card">
               <a href="#" class="portfolio-link">
                 <div class="overlay-flex">
-                  <img
-                    src="./images/seafood_restaurant.jpg"
-                    alt="Логотип ресторану Seafood"
-                    class="portfolio-card-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-images/seafood-restaurant.jpg    1x,
+                        ./images/desktop-images/seafood-restaurant@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet-images/seafood-restaurant-tablet.jpg    1x,
+                        ./images/tablet-images/seafood-restaurant-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile-images/seafood-restaurant-mobile.jpg    1x,
+                        ./images/mobile-images/seafood-restaurant-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/mobile-images/seafood-restaurant-mobile.jpg"
+                      alt="Логотип ресторану"
+                      class="portfolio-card-img"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -156,11 +289,37 @@
             <li class="portfolio-card">
               <a href="#" class="portfolio-link">
                 <div class="overlay-flex">
-                  <img
-                    src="./images/headphones.jpg"
-                    alt="Наушники"
-                    class="portfolio-card-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-images/headphones.jpg    1x,
+                        ./images/desktop-images/headphones@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet-images/headphones-tablet.jpg    1x,
+                        ./images/tablet-images/headphones-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile-images/headphones-mobile.jpg    1x,
+                        ./images/mobile-images/headphones-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/mobile-images/headphones-mobile.jpg"
+                      alt="Наушники"
+                      class="portfolio-card-img"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -178,11 +337,37 @@
             <li class="portfolio-card">
               <a href="#" class="portfolio-link">
                 <div class="overlay-flex">
-                  <img
-                    src="./images/two_boxes.jpg"
-                    alt="Дві коробки"
-                    class="portfolio-card-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-images/two-boxes.jpg    1x,
+                        ./images/desktop-images/two-boxes@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet-images/two-boxes-tablet.jpg    1x,
+                        ./images/tablet-images/two-boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile-images/two-boxes-mobile.jpg    1x,
+                        ./images/mobile-images/two-boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/mobile-images/two-boxes-mobile.jpg"
+                      alt="Дві коробки"
+                      class="portfolio-card-img"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -200,11 +385,37 @@
             <li class="portfolio-card">
               <a href="#" class="portfolio-link">
                 <div class="overlay-flex">
-                  <img
-                    src="./images/imac.jpg"
-                    alt="Монітор"
-                    class="portfolio-card-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-images/imac.jpg    1x,
+                        ./images/desktop-images/imac@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet-images/imac-tablet.jpg    1x,
+                        ./images/tablet-images/imac-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile-images/imac-mobile.jpg    1x,
+                        ./images/mobile-images/imac-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/mobile-images/imac-mobile.jpg"
+                      alt="Монітор"
+                      class="portfolio-card-img"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -222,11 +433,37 @@
             <li class="portfolio-card">
               <a href="#" class="portfolio-link">
                 <div class="overlay-flex">
-                  <img
-                    src="./images/magazine.jpg"
-                    alt="Журнал"
-                    class="portfolio-card-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-images/magazine.jpg    1x,
+                        ./images/desktop-images/magazine@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet-images/magazine-tablet.jpg    1x,
+                        ./images/tablet-images/magazine-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile-images/magazine-mobile.jpg    1x,
+                        ./images/mobile-images/magazine-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/mobile-images/magazine-mobile.jpg"
+                      alt="журнал"
+                      class="portfolio-card-img"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -244,11 +481,37 @@
             <li class="portfolio-card">
               <a href="#" class="portfolio-link">
                 <div class="overlay-flex">
-                  <img
-                    src="./images/label_tag.jpg"
-                    alt="Ярлик"
-                    class="portfolio-card-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-images/label-tag.jpg    1x,
+                        ./images/desktop-images/label-tag@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet-images/label-tag-tablet.jpg    1x,
+                        ./images/tablet-images/label-tag-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile-images/label-tag-mobile.jpg    1x,
+                        ./images/mobile-images/label-tag-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/mobile-images/label-tag-mobile.jpg"
+                      alt="Ярлик"
+                      class="portfolio-card-img"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -266,11 +529,37 @@
             <li class="portfolio-card">
               <a href="#" class="portfolio-link">
                 <div class="overlay-flex">
-                  <img
-                    src="./images/notebook_typing.jpg"
-                    alt="Набирання тексту на ноутбуці"
-                    class="portfolio-card-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-images/notebook-typing.jpg    1x,
+                        ./images/desktop-images/notebook-typing@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet-images/notebook-typing-tablet.jpg    1x,
+                        ./images/tablet-images/notebook-typing-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/mobile-images/notebook-typing-mobile.jpg    1x,
+                        ./images/mobile-images/notebook-typing-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/mobile-images/notebook-typing-mobile.jpg"
+                      alt="Набирання тексту на ноутбуці"
+                      class="portfolio-card-img"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -290,87 +579,89 @@
 
     <footer class="footer-background">
       <div class="container section-footer">
-        <div class="footer-contacts-flex">
-          <a href="./index.html" lang="en" class="logo footer-logo"
-            >Web<span class="logo-light">Studio</span></a
-          >
-          <address>
-            <ul>
-              <li class="footer-address">
-                <a
-                  href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F"
-                  target="_blank"
-                  class="footer-link"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
+        <div class="tablet-footer-wrapper">
+          <div class="footer-contacts-flex">
+            <a href="./index.html" lang="en" class="logo footer-logo"
+              >Web<span class="logo-light">Studio</span></a
+            >
+            <address>
+              <ul class="footer-adress-list">
+                <li class="footer-address">
+                  <a
+                    href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F"
+                    target="_blank"
+                    class="footer-link"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="footer-address">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer-link contact-footer"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-address">
+                  <a href="tel:+380961111111" class="footer-link contact-footer"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-links-flex">
+            <p class="footer-title">приєднуйтесь</p>
+            <ul class="card-links-list">
+              <li>
+                <a href="#" class="card-link footer-icon">
+                  <svg
+                    lang="en"
+                    aria-label="Instagram logotype"
+                    class="card-link-icon"
+                  >
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer-address">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="footer-link contact-footer"
-                  >info@devstudio.com</a
-                >
+              <li>
+                <a href="#" class="card-link footer-icon">
+                  <svg
+                    lang="en"
+                    aria-label="Twitter logotype"
+                    class="card-link-icon"
+                  >
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-address">
-                <a href="tel:+380961111111" class="footer-link contact-footer"
-                  >+38 096 111 11 11</a
-                >
+              <li>
+                <a href="#" class="card-link footer-icon">
+                  <svg
+                    lang="en"
+                    aria-label="Facebook logotype"
+                    class="card-link-icon"
+                  >
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card-link footer-icon">
+                  <svg
+                    lang="en"
+                    aria-label="Linkedin logotype"
+                    class="card-link-icon"
+                  >
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-social-links-flex">
-          <p class="footer-title">приєднуйтесь</p>
-          <ul class="card-links-list">
-            <li>
-              <a href="#" class="card-link footer-icon">
-                <svg
-                  lang="en"
-                  aria-label="Instagram logotype"
-                  class="card-link-icon"
-                >
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="card-link footer-icon">
-                <svg
-                  lang="en"
-                  aria-label="Twitter logotype"
-                  class="card-link-icon"
-                >
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="card-link footer-icon">
-                <svg
-                  lang="en"
-                  aria-label="Facebook logotype"
-                  class="card-link-icon"
-                >
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="card-link footer-icon">
-                <svg
-                  lang="en"
-                  aria-label="Linkedin logotype"
-                  class="card-link-icon"
-                >
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <form>
+        <div class="footer-form-wrapper">
+          <form class="footer-form">
             <p class="footer-form-title">Підпишіться на розсилку</p>
             <div class="footer-input-flex">
               <label class="footer-form-label">
@@ -395,5 +686,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

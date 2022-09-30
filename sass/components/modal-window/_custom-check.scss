@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 
-  @include font(14px, 400, 1.71);
+  @include font(12px, 400, 1.71);
   color: var(--text-color);
 
   margin-bottom: 30px;
@@ -44,9 +44,20 @@
 }
 
 .policy-link {
-  @include font(14px, 400, 1.71);
+  @include font(12px, 400, 1.71);
 
   text-decoration-line: underline;
 
   color: var(--hover-and-logo-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .check-box-label {
+    @include font(14px, 400, 1.71);
+    margin-bottom: 30px;
+  }
+
+  .policy-link {
+    @include font(14px, 400, 1.71);
+  }
 }
