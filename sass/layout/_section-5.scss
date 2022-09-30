@@ -2,7 +2,10 @@
   background-color: var(--milk_color);
 }
 
-.section5-flex {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .section5-flex {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }

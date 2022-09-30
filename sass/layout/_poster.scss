@@ -95,12 +95,17 @@
   text-transform: uppercase;
   color: var(--color-white);
   margin-bottom: 30px;
-  width: 360px;
+
+  max-width: 360px;
 }
 
 @media screen and (min-width: 1200px) {
   .poster-container__title {
     @include font(44px, 900, 1.36);
     width: 700px;
+  }
+
+  .poster-container__title {
+    max-width: 700px;
   }
 }

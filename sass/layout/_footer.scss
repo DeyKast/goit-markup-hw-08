@@ -1,12 +1,24 @@
 .section-footer {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-contacts-flex {
   display: flex;
   flex-direction: column;
-  margin-right: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-adress-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 60px;
 }
 
 .footer-background {
@@ -25,5 +37,88 @@
 }
 
 .footer-social-links-flex {
-  margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 60px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .section-footer {
+    display: flex;
+  }
+
+  .tablet-footer-wrapper {
+    width: 100%;
+    padding-left: 75px;
+    padding-right: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet-footer-wrapper {
+    all: unset;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .section-footer {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .footer-adress-list {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: normal;
+
+    margin-bottom: 0px;
+  }
+
+  .footer-contacts-flex {
+    align-items: normal;
+
+    margin-right: 70px;
+  }
+
+  .footer-background {
+    background: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer-title {
+    @include font(14px, 700, 1.14);
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    color: var(--color-white);
+  }
+
+  .footer-social-links-flex {
+    margin-bottom: 0;
+    margin-right: 93px;
+    align-items: normal;
+  }
+
+  .footer-form {
+    align-items: unset;
+    justify-content: unset;
+  }
 }

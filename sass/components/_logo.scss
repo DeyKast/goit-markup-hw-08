@@ -12,6 +12,7 @@
 
 .footer-logo {
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .logo-light {
@@ -21,6 +22,5 @@
 @media screen and (min-width: 1200px) {
   .logo {
     @include font(26px, 700, 1.38);
-    margin-right: 92px;
   }
 }

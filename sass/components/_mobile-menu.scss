@@ -62,13 +62,15 @@
   }
 
   &:last-child {
-    margin-bottom: 306px;
+    margin-bottom: 302px;
   }
 }
 
 .mobile-menu__contacts-list {
   display: flex;
   flex-direction: column;
+
+  min-width: 160px;
 }
 
 .mobile-menu__contacts-list-item-phone {
@@ -97,13 +99,14 @@
 
 .mobile-menu__social-list {
   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .mobile-menu__social-list-item {
   @include font(18px, 500, 1.22);
 
   padding-right: 10px;
-  margin-right: 10px;
 
   border-right: 1px solid var(--modal-input-border);
 

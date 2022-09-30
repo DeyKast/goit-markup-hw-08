@@ -1,13 +1,14 @@
 .companies-list {
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .companies-list-item {
-  width: 170px;
+  max-width: 210px;
   height: 92px;
 
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 .company-link {
@@ -35,4 +36,20 @@
   display: block;
   width: 106px;
   height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .companies-list-item {
+    max-width: 226px;
+
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .companies-list-item {
+    width: 170px;
+
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }

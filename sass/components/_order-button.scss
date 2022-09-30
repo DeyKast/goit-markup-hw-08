@@ -1,6 +1,6 @@
 .order-button {
   @include font(16px, 700, 1.9);
-  width: 216px;
+  min-width: 200px;
   height: 50px;
   font-family: var(--text-family);
   font-style: normal;
@@ -17,5 +17,11 @@
   &:focus {
     background-color: var(--order-btn-active);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-button {
+    width: 216px;
   }
 }
